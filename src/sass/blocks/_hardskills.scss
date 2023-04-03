@@ -1,0 +1,69 @@
+.hardskills {
+    padding-top: 120px;
+
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(2, minmax(215px, auto))/ repeat(4, 270px);
+        column-gap: 13px;
+        row-gap: 13px;
+        grid-auto-rows: minmax(215px, auto);
+        margin-top: 60px;
+    }
+
+    &__item {
+        box-sizing: border-box;
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+
+        &-icon {
+            margin-bottom: 20px;
+        }
+
+        &-descr {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 15px;
+        }
+    }
+
+    &__volumes {
+        padding-top: 128px;
+        display: grid;
+        grid-template: repeat(2, minmax(70px, auto))/ repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+        grid-auto-rows: minmax(70px, auto);
+    }
+
+    &__volume {
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__footer {
+            margin-top: 20px;
+            width: 100%;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+
+            &-field {
+                height: 100%;
+                background-color: $main-color;
+                border-radius: 4px;
+            }
+
+        }
+
+        &__title {
+            position: relative;
+            padding: 2px 0 0 13px;
+            @include before_circle;
+
+
+        }
+    }
+
+}
