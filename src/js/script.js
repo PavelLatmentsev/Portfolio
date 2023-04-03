@@ -9,3 +9,10 @@ hamburger.addEventListener("click", () => {
 closeElem.addEventListener("click", () => {
     menu.classList.remove("active")
 })
+
+const counters = document.querySelectorAll(".hardskills__volume__counter");
+const widthLine = document.querySelectorAll(".hardskills__volume__footer-field");
+
+counters.forEach((counter, i) => {
+    widthLine[i].style.width = counter.innerHTML;
+})
